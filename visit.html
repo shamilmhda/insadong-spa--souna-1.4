@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visit & Snack Menu | Insadong Spa & Sauna</title>
+<meta name="description" content="Location, hours, and snack menu for Insadong Spa & Sauna. Find us in the heart of Insadong, Seoul.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Noto+Sans+KR:wght@400;500&family=Noto+Serif+KR:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="bar">
+    <a class="logo" href="index.html"><b>Insadong Spa &amp; Sauna</b><span>인사동 한증막</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="treatments.html">Treatments</a>
+      <a href="saunas.html">Saunas</a>
+      <a href="first-visit.html">First Visit</a>
+      <a href="visit.html" aria-current="page">Visit</a>
+    </nav>
+    <a class="btn" href="#inquire">Book / Inquire</a>
+  </div>
+</header>
+
+<main>
+  <section id="location">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <span class="eyebrow">Find your calm</span>
+          <h1>Location & Hours</h1>
+          <p class="lede">Located in the historic Insadong district. Take the stairs or lift to Basement 1 (B1) of the World Officetel building.</p>
+          <ul class="rows">
+            <li><span>Address</span><span>B1, World Officetel (오피스텔월드), Insadong, Seoul</span></li>
+            <li><span>Hours</span><span>Daily · 9:00 AM – 9:00 PM</span></li>
+            <li><span>Phone</span><span><a href="tel:+82-2-765-8025">02-765-8025</a></span></li>
+          </ul>
+          <div class="btns" style="margin-top:24px">
+            <button class="btn out" data-copy="서울 종로구 인사동 오피스텔월드 지하1층 인사동 한증막">Copy Korean Address for Taxi</button>
+          </div>
+        </div>
+        <div class="media"><img src="assets/images/visit-entrance.jpg" alt="Basement 1 entrance signage for Insadong Spa & Sauna (인사동 한증막) in Seoul" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+      </div>
+      
+      <div class="map-frame" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357ca3677027b929%3A0x75125799f94d578d!2sInsadong%20Spa%20%26%20Sauna!5e0!3m2!1sen!2sin!4v1795239609715!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+  <section class="alt" id="menu">
+    <div class="wrap">
+      <div class="head-row">
+        <div>
+          <span class="eyebrow">Refresh</span>
+          <h2>Snack & Drink Counter</h2>
+          <p class="lede">Classic spa refreshments to enjoy in the co-ed lounge. Please pay in advance at the counter.</p>
+        </div>
+        <div class="chips">
+          <button data-filter="all" aria-pressed="true">All Items</button>
+          <button data-filter="drinks">Drinks</button>
+          <button data-filter="traditional">Traditional</button>
+          <button data-filter="eggs">Snacks</button>
+        </div>
+      </div>
+
+      <ul class="rows">
+        <li data-cat="drinks"><span>Water</span><span data-krw="1000">₩1,000</span></li>
+        <li data-cat="drinks"><span>Bacchus Energy Drink</span><span data-krw="1000">₩1,000</span></li>
+        <li data-cat="drinks"><span>Yoplait Yogurt Drink</span><span data-krw="1000">₩1,000</span></li>
+        <li data-cat="traditional"><span>Sikhye (Sweet Rice Juice)</span><span data-krw="1500">₩1,500</span></li>
+        <li data-cat="drinks"><span>Cider / Sprite</span><span data-krw="1500">₩1,500</span></li>
+        <li data-cat="drinks"><span>Triangle Coffee Milk</span><span data-krw="1500">₩1,500</span></li>
+        <li data-cat="drinks"><span>Lemonade</span><span data-krw="2000">₩2,000</span></li>
+        <li data-cat="traditional"><span>Cold Barley Tea</span><span data-krw="2000">₩2,000</span></li>
+        <li data-cat="drinks"><span>Banana Milk</span><span data-krw="2000">₩2,000</span></li>
+        <li data-cat="eggs"><span>Sauna Roasted Eggs (2–3 pcs)</span><span data-krw="2000">₩2,000</span></li>
+        <li data-cat="drinks"><span>Pocari Sweat</span><span data-krw="2500">₩2,500</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <span class="eyebrow">Inquiry</span>
+      <h2>Frequently Asked Questions</h2>
+      <div style="margin-top:40px; display:grid; gap:16px">
+        <details class="card body"><summary><b>Do I need to bring towels?</b></summary><p style="margin-top:12px">No, we provide fresh towels and a sauna uniform upon entry.</p></details>
+        <details class="card body"><summary><b>How do I pay?</b></summary><p style="margin-top:12px">We accept Cash and major Credit Cards. Note that card payments for spa packages incur a 10% VAT.</p></details>
+        <details class="card body"><summary><b>Is there an ATM nearby?</b></summary><p style="margin-top:12px">Yes, we have an on-site ATM at the reception. Note that a ₩4,800 commission fee applies.</p></details>
+      </div>
+    </div>
+  </section>
+
+<footer>
+  <div class="wrap">
+    <h3>Insadong Spa &amp; Sauna</h3>
+    <span class="kr">인사동 한증막 · 仁寺洞汗蒸幕</span>
+    <nav class="f-nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="treatments.html">Treatments</a>
+      <a href="saunas.html">Saunas</a>
+      <a href="admission.html">Admission</a>
+      <a href="first-visit.html">First Visit</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+    <p class="addr">Basement 1 (B1), World Officetel, Insadong, Seoul<br>Daily: 9:00 AM – 9:00 PM</p>
+    <a href="tel:+82-2-765-8025" class="phone-pill">📞 02-765-8025</a>
+    <p class="paystrip">+10% VAT on credit card packages · 10-Visit Pass cash only · On-site ATM ₩4,800 fee per transaction.</p>
+  </div>
+</footer>
+
+<nav class="sticky" aria-label="Quick actions">
+  <a href="#location">Location</a>
+  <a href="tel:+82-2-765-8025">Call</a>
+  <a href="#faq">FAQ</a>
+</nav>
+
+<script src="js/main.js"></script>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admission & Prices | Insadong Spa & Sauna</title>
+<meta name="description" content="View admission fees for baths and saunas at Insadong Spa & Sauna. Use our visit calculator to estimate your total cost.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Noto+Sans+KR:wght@400;500&family=Noto+Serif+KR:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="bar">
+    <a class="logo" href="index.html"><b>Insadong Spa &amp; Sauna</b><span>인사동 한증막</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="treatments.html">Treatments</a>
+      <a href="saunas.html">Saunas</a>
+      <a href="admission.html" aria-current="page">Prices</a>
+      <a href="first-visit.html">First Visit</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+    <a class="btn" href="visit.html#inquire">Book / Inquire</a>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <div class="head-row">
+        <div>
+          <span class="eyebrow">Entry</span>
+          <h1>Admission & Fees</h1>
+          <p class="lede">Choose your experience. All sauna entries include a fresh uniform and towels.</p>
+        </div>
+        <div class="toolbar">
+          <div class="pill" role="group" aria-label="Payment method">
+            <button data-pay="cash" aria-pressed="true">Cash</button>
+            <button data-pay="card" aria-pressed="false">Card +10% VAT</button>
+          </div>
+          <div class="pill"><select class="cur" aria-label="Currency">
+            <option value="KRW">KRW ₩</option><option value="USD">USD $</option><option value="JPY">JPY ¥</option><option value="CNY">CNY ¥</option>
+          </select></div>
+        </div>
+      </div>
+
+      <div class="grid g3">
+        <div class="entry">
+          <h3>Bath Only (목욕)</h3>
+          <span class="price" data-krw="12000">₩12,000</span>
+          <p>Access to gender-separated showers and soaking bath pools only.</p>
+        </div>
+        <div class="entry pick">
+          <span class="tag">Recommended</span>
+          <h3 style="margin-top:8px">Sauna &amp; Baths (한증막)</h3>
+          <span class="price" data-krw="16000">₩16,000</span>
+          <p>Full access to baths plus all traditional kiln and themed saunas.</p>
+        </div>
+        <div class="entry">
+          <h3>Child (소인)</h3>
+          <span class="price" data-krw="7000">₩7,000</span>
+          <p>Discounted entry for children under 48 months of age.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="alt">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <span class="eyebrow">Memberships & Rules</span>
+          <h2>Payment Details</h2>
+          <ul class="rows">
+            <li><span>10-Visit Pass (목욕회원권)</span><span data-krw="110000">₩110,000</span></li>
+            <li><span>Extra Outfit Rental</span><span data-krw="1000">₩1,000</span></li>
+            <li><span>Credit Card VAT</span><span>+10% on Packages</span></li>
+            <li><span>On-Site ATM Fee</span><span>₩4,800 per txn</span></li>
+          </ul>
+          <p class="note"><b>Note:</b> The 10-visit membership pass is strictly <b>Cash Only</b>. An ATM is available at the reception desk if needed.</p>
+        </div>
+        
+        <div id="calculator-box">
+          <span class="eyebrow">Interactive</span>
+          <h3>Plan My Visit</h3>
+          <form id="calc" style="margin-top:20px">
+            <label>Adults <input type="number" name="adults" value="1" min="1"></label>
+            <label>Children (<48m) <input type="number" name="kids" value="0" min="0"></label>
+            <label>Entry Type 
+              <select name="entry">
+                <option value="16000">Sauna &amp; Baths (₩16,000)</option>
+                <option value="12000">Bath Only (₩12,000)</option>
+              </select>
+            </label>
+            <label>Add a Package?
+              <select name="pkg">
+                <option value="0">None</option>
+                <option value="150000">Insadong SPA (₩150k)</option>
+                <option value="100000">Massage Pkg (₩100k)</option>
+                <option value="90000">Scrub &amp; Mass. (₩90k)</option>
+                <option value="70000">Scrub Pkg (₩70k)</option>
+              </select>
+            </label>
+            <label>Package Qty <input type="number" name="pkgQty" value="1" min="1"></label>
+            <div style="grid-column: 1/-1; display:flex; gap:16px; flex-wrap:wrap; margin:10px 0">
+              <label style="flex-direction:row; align-items:center; gap:8px"><input type="checkbox" data-krw="25000"> Mugwort Steam</label>
+              <label style="flex-direction:row; align-items:center; gap:8px"><input type="checkbox" data-krw="25000"> Cupping</label>
+            </div>
+            <label>Snack Budget 
+              <select name="snacks">
+                <option value="0">None</option>
+                <option value="3500">Sikhye + Eggs (₩3.5k)</option>
+                <option value="7000">Standard Snacks (₩7k)</option>
+                <option value="15000">Full Refreshments (₩15k)</option>
+              </select>
+            </label>
+            <div class="total">Total: <span id="calc-total">₩0</span></div>
+            <p id="calc-note" class="meta" style="grid-column:1/-1"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer>
+  <div class="wrap">
+    <h3>Insadong Spa &amp; Sauna</h3>
+    <span class="kr">인사동 한증막 · 仁寺洞汗蒸幕</span>
+    <nav class="f-nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="treatments.html">Treatments</a>
+      <a href="saunas.html">Saunas</a>
+      <a href="admission.html">Admission</a>
+      <a href="first-visit.html">First Visit</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+    <p class="addr">Basement 1 (B1), World Officetel, Insadong, Seoul<br>Daily: 9:00 AM – 9:00 PM</p>
+    <a href="tel:+82-2-765-8025" class="phone-pill">📞 02-765-8025</a>
+    <p class="paystrip">+10% VAT on credit card packages · 10-Visit Pass cash only · On-site ATM ₩4,800 fee per transaction.</p>
+  </div>
+</footer>
+
+<nav class="sticky" aria-label="Quick actions">
+  <a href="visit.html#inquire">Book</a>
+  <a href="tel:+82-2-765-8025">Call</a>
+  <a href="visit.html#map">Directions</a>
+</nav>
+
+<script src="js/main.js"></script>
